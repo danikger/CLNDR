@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Odometer from './Components/odometer';
 import './App.css';
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
           </div>
           <div className="flex justify-between mt-8 text-sm pr-4">
             <h1 className="text-zinc-100">2025</h1>
-            <p className="text-zinc-100 flex">000 <span className="text-zinc-600 ml-1.5">days left</span></p>
+            <p className="text-zinc-100 flex items-center"><Odometer value={hovered} duration={500} size={"0.875rem"} /> <span className="text-zinc-600 ml-1.5">days left</span></p>
           </div>
         </div>
       </main>
