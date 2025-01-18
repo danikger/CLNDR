@@ -2,7 +2,7 @@
 
 a countdown calendar
 
-### Check it out [here]([https://www.](https://clndr-one.vercel.app/)])
+### Check it out [here](https://clndr-one.vercel.app/)
 
 ### Running the App
 1. Start the development server:
