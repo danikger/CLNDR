@@ -29,13 +29,13 @@ function App() {
               <div
                 key={index}
                 className="group size-5 flex items-center justify-center m-0 sm:m-1"
-                onMouseEnter={() => changeDay(index)}
+                onMouseEnter={() => changeDay(index+1)}
                 onMouseLeave={() => changeDay()}
                 data-tooltip-id="my-tooltip"
                 data-tooltip-content={getDateFromDay(index + 1)}
               >
                 <div style={{ transitionDuration: `${500 - index * 1.3}ms` }}
-                  className={`size-1 rounded-full group-hover:zinc-200 transition-all ${currentDate >= index ? "bg-zinc-100" : "bg-zinc-700"}`}
+                  className={`size-1 rounded-full group-hover:zinc-200 transition-all ${currentDate >= index+1 ? "bg-zinc-100" : "bg-zinc-700"}`}
                 ></div>
               </div>
             ))}
