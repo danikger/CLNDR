@@ -55,7 +55,7 @@ function App() {
           <div className="flex justify-between mt-8 text-sm px-2.5">
             <h1 className="text-zinc-100">{currentYear}</h1>
             <div className="text-zinc-100 flex items-center">
-              <Odometer value={days - currentDate - 1} duration={500} size={"0.875rem"} />
+              <Odometer value={days - currentDate} duration={500} size={"0.875rem"} />
               <span className="text-zinc-600 ml-1.5">
                 {days - currentDate - 1 === 1 ? "day" : "days"} left
               </span>
