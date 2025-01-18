@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Odometer from './Components/odometer';
 import { isLeapYear, getDayOfYear, getDateFromDay } from './utils/dateFunctions';
+import { Tooltip } from 'react-tooltip'
 import './App.css';
 
 function App() {
@@ -39,6 +40,17 @@ function App() {
               </div>
             ))}
           </div>
+
+          <Tooltip
+            id="my-tooltip"
+            delayShow={100}
+            className="animate-in slide-in-from-bottom-2 duration-300"
+            effect="solid"
+            place="top-start"
+            opacity={1}
+            noArrow
+            style={{ backgroundColor: "#f4f4f5", color: "#09090b", padding: "0.25rem 0.5rem" }}
+          />
 
           <div className="flex justify-between mt-8 text-sm px-2.5">
             <h1 className="text-zinc-100">{currentYear}</h1>
