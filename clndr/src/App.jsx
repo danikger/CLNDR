@@ -23,12 +23,12 @@ function App() {
   return (
     <>
       <main className="bg-zinc-950 min-h-screen relative size-full flex items-center">
-        <div className="max-w-2xl mx-auto px-4">
-          <div className="inline-flex flex-wrap items-start justify-start gap-0">
+        <div className="w-full max-w-2xl mx-auto px-6">
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(20px,1fr))] gap-0.25 min-[420px]:gap-2" >
             {Array.from({ length: days }).map((_, index) => (
               <div
                 key={index}
-                className="group size-5 flex items-center justify-center m-0 sm:m-1"
+                className="group size-5 flex items-center justify-center justify-self-center"
                 onMouseEnter={() => changeDay(index+1)}
                 onMouseLeave={() => changeDay()}
                 data-tooltip-id="my-tooltip"
